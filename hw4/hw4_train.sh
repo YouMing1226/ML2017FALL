@@ -1,0 +1,1 @@
+ python3 train.py model_rnn train $1 $2 
