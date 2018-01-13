@@ -1,1 +1,2 @@
-python3 train.py $1 $2
+unzip $1 
+python3 cluster.py $2 $3
