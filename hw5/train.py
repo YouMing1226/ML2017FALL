@@ -10,7 +10,7 @@ from keras.callbacks import History, EarlyStopping, ModelCheckpoint
 from keras.models import Model
 from keras.models import load_model
 from keras import backend as K
-from sklearn.manifold import TSNE
+
 
 # movieID::Title::Genres
 movie_path = 'data/movies.csv'
