@@ -198,6 +198,6 @@ if sys.argv[1] == 'test':
             else:
                 f.write(str(i+1) + "," + str(y_pred[i][0]) + "\n")
 
-print(time.time() - start_time)
+#print(time.time() - start_time)
 
 
