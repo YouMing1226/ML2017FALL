@@ -13,17 +13,17 @@ from keras import backend as K
 
 
 # movieID::Title::Genres
-movie_path = 'data/movies.csv'
+#movie_path = 'data/movies.csv'
 
 # UserID::Gender::Age::Occupation::Zip-code
-user_path = 'data/users.csv'
+#user_path = 'data/users.csv'
 
 # TestDataID,UserID,MovieID
 test_path = sys.argv[3]
 print('Loading test data from {}'.format(test_path))
 
 # TrainDataID,UserID,MovieID,Rating
-train_path = './data/train.csv'
+#train_path = './data/train.csv'
 
 #def load_data(train_path, test_path):
 print('Loading data...')
@@ -116,21 +116,21 @@ def nn_model(n_users, n_items, latent_dim, drop_rate):
 
     return model
 
-start_time = time.time()
+#start_time = time.time()
 
-user_data, movie_data, user_train, user_val, movie_train, movie_val, y_train, y_valid, user_test, movie_test = load_data(train_path, test_path)
+#user_data, movie_data, user_train, user_val, movie_train, movie_val, y_train, y_valid, user_test, movie_test = load_data(train_path, test_path)
 
-n_users = max(user_data)
-n_movies = max(movie_data)
+#n_users = max(user_data)
+#n_movies = max(movie_data)
 
 latent_dim = int(sys.argv[2])
 batch_size = 2048
 epoch = 500
 dropout_rate = 0.1
 
-print('Train users:',n_users)
-print('Train movies:',n_movies)
-print('Latent dim:',latent_dim)
+#print('Train users:',n_users)
+#print('Train movies:',n_movies)
+#print('Latent dim:',latent_dim)
 
 #model_dir = 'model'
 #if not os.path.isdir(model_dir):
