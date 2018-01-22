@@ -80,7 +80,7 @@ IDs, idx1, idx2 = np.array(f['ID']), np.array(f['image1_index']), np.array(f['im
 ## predict
 print('Predicting...')
 ans = open(sys.argv[2],'w')
-ans.write('ID,Ans\n'
+ans.write('ID,Ans\n')
 
 for idx, i1, i2 in zip(IDs, idx1, idx2):
 	p1 = db.labels_[i1]
