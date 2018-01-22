@@ -17,8 +17,8 @@ train_ratio = 0.9
 epochs = 150
 batch_size = 256
 
-img_path = './image.npy'
-test_path = sys.argv[1]
+img_path = sys.argv[1]
+test_path = sys.argv[2]
 
 ### read data
 img = np.load(img_path)
@@ -79,7 +79,7 @@ IDs, idx1, idx2 = np.array(f['ID']), np.array(f['image1_index']), np.array(f['im
 
 ## predict
 print('Predicting...')
-ans = open(sys.argv[2],'w')
+ans = open(sys.argv[3],'w')
 ans.write('ID,Ans\n')
 
 for idx, i1, i2 in zip(IDs, idx1, idx2):
