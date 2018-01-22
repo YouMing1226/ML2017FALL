@@ -1,2 +1,1 @@
-unzip $1 
-python3 cluster.py $2 $3
+python3 cluster.py $1 $2 $3
